@@ -33,4 +33,11 @@ public class AppView {
 
         return option;
     }
+
+    public void getOutput(String output, int choice) {
+        if (choice == 0)
+            System.out.println(output);
+        scanner.close();
+        System.exit(0);
+    }
 }

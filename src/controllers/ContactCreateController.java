@@ -2,6 +2,7 @@ package controllers;
 
 import database.entities.Contact;
 import models.ContactCreateModel;
+import utils.AppStarter;
 import views.ContactCreateView;
 
 import java.util.Map;
@@ -38,5 +39,7 @@ public class ContactCreateController {
         return stringBuilder.toString();
     }
 
-    //TODO
+    private void restartApp() {
+        AppStarter.startApp();
+    }
 }

@@ -1,6 +1,7 @@
 package controllers;
 
 import models.ContactReadModel;
+import utils.AppStarter;
 import views.ContactReadView;
 
 import java.util.Map;
@@ -35,5 +36,7 @@ public class ContactReadController {
         return stringBuilder.toString();
     }
 
-    //TODO
+    private void restartApp() {
+        AppStarter.startApp();
+    }
 }

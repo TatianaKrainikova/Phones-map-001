@@ -23,6 +23,7 @@ public class ContactCreateController {
         contact = view.doInputs();
         model.createContact(contact);
         view.getOutput(readContacts(model.createContact(contact)));
+        restartApp();
     }
 
     public String readContacts(Map<String, String> map) {

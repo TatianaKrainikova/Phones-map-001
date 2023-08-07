@@ -19,6 +19,7 @@ public class ContactReadController {
 
     public void getContacts() {
         view.getOutput(readContacts());
+        restartApp();
     }
 
     public String readContacts() {

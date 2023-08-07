@@ -10,5 +10,6 @@ public class AppStarter {
         AppModel appModel = new AppModel();
         AppView appView = new AppView(appModel);
         AppController appController = new AppController(appModel, appView);
+        appController.runApp();
     }
 }
